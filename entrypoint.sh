@@ -1,2 +1,2 @@
 #!/bin/bash
-python ./helloworld.py
+python ./helloworld/helloworld.py
