@@ -9,6 +9,8 @@ LABEL com.github.actions.description="Action that enables building and testing o
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="blue"
 RUN apt-get install python
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+RUN python get-pip.py
 RUN pip install awscli --upgrade --user
 RUN pip install --user aws-sam-cli
 COPY entrypoint.sh /entrypoint.sh
