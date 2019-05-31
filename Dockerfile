@@ -11,7 +11,5 @@ LABEL com.github.actions.color="blue"
 RUN apt-get install python
 COPY entrypoint.sh /entrypoint.sh
 
-WORKDIR /workspace
 ENTRYPOINT ["/entrypoint.sh"]
 RUN chmod +x /entrypoint.sh
-CMD ["--help-commands"]
