@@ -1,5 +1,5 @@
 #!/bin/bash
 python --version
-aws --version
-sam --version
+which aws
+which sam
 python ./helloworld/helloworld.py
