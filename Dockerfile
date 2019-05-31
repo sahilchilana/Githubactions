@@ -8,7 +8,7 @@ LABEL com.github.actions.name=""
 LABEL com.github.actions.description="Action that enables building and testing of Python 2.7 packages "
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="blue"
-RUN apt-get install python 3.6
+RUN apt-get install python
 COPY entrypoint.sh /entrypoint.sh
 
 WORKDIR /workspace
