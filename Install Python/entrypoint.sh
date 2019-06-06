@@ -1,2 +1,3 @@
 #!/bin/bash
-ls
+cd lambda_function
+python test.py
