@@ -1,4 +1,4 @@
-FROM amazon/aws-stepfunctions-local
+FROM python:2.7-stretch
 LABEL version="0.0.1"
 LABEL repository="https://github.com/sahilchilana/Githubactions"
 LABEL homepage="https://github.com/sahilchilana/Githubactions"
