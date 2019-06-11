@@ -7,4 +7,7 @@ LABEL com.github.actions.name="Install AWS Step Functions"
 LABEL com.github.actions.description="Action that enables building and testing of Python 2.7 packages "
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="blue"
-CMD docker run -p 8083:8083 amazon/aws-stepfunctions-local
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+RUN chmod +x /entrypoint.sh
