@@ -7,4 +7,4 @@ LABEL com.github.actions.name="Install AWS Step Functions"
 LABEL com.github.actions.description="Action that enables building and testing of Python 2.7 packages "
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="blue"
-RUN -p 8083:8083 amazon/aws-stepfunctions-local
+RUN run -p 8083:8083 amazon/aws-stepfunctions-local
